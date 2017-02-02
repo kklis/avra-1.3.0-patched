@@ -2,4 +2,6 @@ This is a patched version 1.3.0 of AVRA assembler for the Atmel AVR microcontrol
 
 The original patch can be found at https://sourceforge.net/p/avra/patches/16/
 
+Compiling the source code: `cd src && make -f makefiles/Makefile.osx`
+
 See the doc directory for more information.
