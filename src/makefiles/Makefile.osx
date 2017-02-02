@@ -1,5 +1,5 @@
 CC=gcc
-ARCH=-arch i386 -arch x86_64 -arch ppc
+ARCH=-arch i386 -arch x86_64
 SOURCE=args.c \
         avra.c \
         coff.c \

@@ -332,7 +332,8 @@ int parse_line(struct prog_info *pi, char *line)
 				}
 				return(True);
 			}
-			strcpy(pi->fi->scratch, &pi->fi->scratch[i]);
+//			strcpy(pi->fi->scratch, &pi->fi->scratch[i]);
+			memmove(pi->fi->scratch, &pi->fi->scratch[i], strlen(&pi->fi->scratch[i])+1); // Changed from strcpy since it aborts on OSX when overlapping
 			break;
 		}
 
